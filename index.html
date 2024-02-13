@@ -1,0 +1,3114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiKing - eCommerce Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon1.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletterimg.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe to Biking Newsletter</h3>
+
+            <p class="newsletter-desc">
+              Stay updated with the latest trends, new bicycle releases, and exclusive discounts.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Your Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/newboughtimg.png" alt="Bought Product image" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        Bicycle
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Free Shipping</b>
+            This Week Order Over - ₹50
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="IND">Indian &#8377;</option>
+            <option value="USD">USD &dollar;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="IND-ENG">English</option>
+            <option value="IND-Hindi">Hindi</option>
+            <option value="IND-Marathi">Marathi</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <!-- <img src="./assets/images/logo/logo3.svg" alt="BIKING's logo"width="120" height="36" style=""> -->
+          <div class="box-log">
+            <p style="font-size: 50px; color: black; font-family:Georgia, 'Times New Roman', Times, serif ;">
+              <b>BiKing</b>
+            </p>
+          </div>
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your Bicycle name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+      <div class="container">
+        <ul class="desktop-menu-category-list">
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Bicycles</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Categories</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Mountain Bikes</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Road Bikes</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">City Bikes</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Electric Bikes</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Types</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Electronic Cycles (E-Bike)</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mountain Bikes (MTB)</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Road Bikes</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hybrid Bikes</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Accessories</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Helmets</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Lights</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Locks & Safety Accessories</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Men's</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Apparel</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Footwear</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Accessories</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Women's</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Apparel</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Footwear</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Accessories</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Fragrances</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Men's Fragrance</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Women's Fragrance</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Blog</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Offers</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Bicycles</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Mountain Bikes</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Road Bikes</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">City Bikes</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Electric Bikes</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Accessories</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Helmets</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Lights & Reflectors</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Locks</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Bike Tools</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Offers</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Hindi</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Tamil</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">INR ₹</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD $</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-Ad.avif" alt="Explore the Outdoors" class="banner-img">
+
+            <div class="banner-content" style="background: hsla(0, 0%, 100%, 0.8);">
+
+              <p class="banner-subtitle">Adventure Awaits</p>
+
+              <h2 class="banner-title">Explore the Outdoors with Our Premium Bikes</h2>
+
+              <p class="banner-text" style="color:rgb(0, 0, 0);">
+                Find the perfect Bike for your next adventure starting at <b>₹4999.00</b>
+              </p>
+
+              <a href="#" class="banner-btn">Shop Bikes</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-Road.avif" alt="Professional Road Bikes" class="banner-img">
+
+            <div class="banner-content" style="background: hsla(0, 0%, 100%, 0.8);">
+
+              <p class="banner-subtitle">Upgrade Your Ride</p>
+
+              <h2 class="banner-title">Professional Road Bikes for Speed and Precision</h2>
+
+              <p class="banner-text">
+                Elevate your cycling experience with our road Bikes starting at <b>₹9999.00</b>
+              </p>
+
+              <a href="#" class="banner-btn">Shop Road Bikes</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/bannerAcc.avif" alt="Quality Accessories for Cyclists" class="banner-img">
+
+            <div class="banner-content" style="background: hsla(0, 0%, 100%, 0.8);">
+
+              <p class="banner-subtitle">Enhance Your Journey</p>
+
+              <h2 class="banner-title">Quality Accessories for Comfortable Rides</h2>
+
+              <p class="banner-text">
+                Discover essential accessories to enhance your cycling experience starting at <b>₹99.99</b>
+              </p>
+
+              <a href="#" class="banner-btn">Shop Accessories</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/bicycle_ico.png" alt="bicycles" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Bicycles</h3>
+
+                <p class="category-item-amount">(45)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/helmet_ico.png" alt="helmets" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Helmets</h3>
+
+                <p class="category-item-amount">(32)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/bicycle_lock_ico.png" alt="Bike locks" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Bike Locks</h3>
+
+                <p class="category-item-amount">(22)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/cloths.png" alt="Bike locks" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Sports Clothes</h3>
+
+                <p class="category-item-amount">(25)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/bicycle_light_reflect_ico.png" alt="lights & reflectors" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Lights & Reflectors</h3>
+
+                <p class="category-item-amount">(18)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/bicycle_basket_ico.png" alt="baskets" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Baskets</h3>
+
+                <p class="category-item-amount">(12)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+          <!-- ... (previous code) -->
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/toolkit.png" alt="toolkits" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Toolkits</h3>
+
+                <p class="category-item-amount">(25)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/pumps.png" alt="pumps" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Pumps</h3>
+
+                <p class="category-item-amount">(15)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/bells.png" alt="bells" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Bells</h3>
+
+                <p class="category-item-amount">(20)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <!-- ... (remaining code) -->
+
+
+          <!-- Add more categories for bicycle accessories as needed -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Categories</h2>
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/icons8-bicycle-48.png" alt="bicycles" width="20" height="20"
+                      class="menu-title-img">
+                    <p class="menu-title">Bicycles</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Mountain Bikes</p>
+                      <data value="30" class="stock" title="Available Stock">30</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Road Bikes</p>
+                      <data value="20" class="stock" title="Available Stock">20</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">City Bikes</p>
+                      <data value="15" class="stock" title="Available Stock">15</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Electric Bikes</p>
+                      <data value="10" class="stock" title="Available Stock">10</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/icons8-bicycle-cassette-80.png" alt="accessories"
+                      class="menu-title-img" width="20" height="20">
+                    <p class="menu-title">Accessories</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Helmets</p>
+                      <data value="25" class="stock" title="Available Stock">25</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Lights</p>
+                      <data value="18" class="stock" title="Available Stock">18</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Locks</p>
+                      <data value="22" class="stock" title="Available Stock">22</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/icons8-sports-teams-48.png" alt="apparel" class="menu-title-img"
+                      width="20" height="20">
+                    <p class="menu-title">Apparel</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Cycling Jerseys</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Shorts</p>
+                      <data value="28" class="stock" title="Available Stock">28</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Gloves</p>
+                      <data value="40" class="stock" title="Available Stock">40</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <!-- Add more categories as needed -->
+
+            </ul>
+
+          </div>
+
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">Accessory</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/toolkit.webp" alt="Bike repair toolkit" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Bike repair toolkit</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹255.00</del>
+                      <p class="price">₹199.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/light-set.webp" alt="Bike lights set" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Bike lights set</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹190.00</del>
+                      <p class="price">₹150.99</p>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/bottle.png" alt="Bike lights set" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Water Bottle</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>₹150.00</del>
+                      <p class="price">₹99.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <!-- Add more accessory items as needed -->
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">New Arrivals</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/new1.png" alt="new-1 Bike" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Mach City iBike Single Speed Large Zesty orange</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">City Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹11500.00</p>
+                        <del>₹12500.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/new2.png" alt="New-2 Bike" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Mach City iBike Single Speed Large Aquamarine Blue</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">City Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹12500.00</p>
+                        <del>₹14500.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/new-3.png" alt="new-3 Bike" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Mach City Munich 21 Speed Medium Stark Red</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">City Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹9999.00</p>
+                        <del>₹12999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/new8.png" alt="new8 Bike" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Mach City iBike Single Speed Large Ocean Grey</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">City Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹8999.00</p>
+                        <del>₹12999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/new4.png" alt="new-4 Bike" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Montra Downtown Large Grey with Neon Orange</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Mountain Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹18500.00</p>
+                        <del>₹20999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/new-5.png" alt="new-5 Bike" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Montra Rock 27.5T Grey with Black Neon Orange</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Mountain Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹32500.00</p>
+                        <del>₹55000.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/new6.png" alt="new6 Bike" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Montra Rock 27.5T Blue with Black and Orange</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Mountain Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹45990.00</p>
+                        <del>₹65999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/new7.png" alt="new7 Bike" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Montra Timba 700C Medium Champagne Gold</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Mountain Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹15999.00</p>
+                        <del>₹19999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+
+              <h2 class="title">Kids Bikes</h2>
+
+              <div class="showcase-wrapper  has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/kideBike8.png" alt="kide Bike8" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Montra Spinto 14T Purple and White</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Girl Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹3999.00</p>
+                        <del>₹5999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/kideBike7.png" alt="kide Bike7" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Montra Pirate 14T White and Black</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Boy Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹4998.00</p>
+                        <del>₹6999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/kideBike6.png" alt="kide Bike6" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Montra Patrol 12T Blue and Red</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Girl Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹3999.00</p>
+                        <del>₹4999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/kideBike5.png" alt="kide Bike5" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Montra Hip Hop 16T Red and Black</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Boy Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹5999.00</p>
+                        <del>₹6999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/kidebike4.png" alt="kide Bike4" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Montra Glitzy 16T White and Purple</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Girl Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹5999.00</p>
+                        <del>₹7999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/kidebike3.png" alt="kide Bike3" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">BSA Kinder 16T Victor Blue</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Boy Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹2999.00</p>
+                        <del>₹3999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/kidebike2.png" alt="kide bike2" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">BSA Roamer 20T Matte Black</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Boy Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹6999.00</p>
+                        <del>₹7999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/kidebike1.png" alt="kide Bike1" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">BSA Roamer 14T Victor Blue </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Boy Bike</a>
+
+                      <div class="price-box">
+                        <p class="price">₹4070.00</p>
+                        <del>₹6000.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+
+              <h2 class="title">Best Deals</h2>
+
+              <div class="showcase-wrapper  has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/sit-cover.png" alt="sit-cover" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">SADDLE COVER</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Accessories</a>
+
+                      <div class="price-box">
+                        <p class="price">₹199.00</p>
+                        <del>₹299.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/lock.png" alt="lock" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Lock</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Safety Accessories</a>
+
+                      <div class="price-box">
+                        <p class="price">₹299.00</p>
+                        <del>₹399.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/CYCLING-JERSEY.png" alt="CYCLING JERSEY" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">CYCLING JERSEY</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Sports cloths</a>
+
+                      <div class="price-box">
+                        <p class="price">₹499.00</p>
+                        <del>₹999.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/GLOVES.png" alt="GLOVES" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">GLOVES</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Safety Accessories</a>
+
+                      <div class="price-box">
+                        <p class="price">₹450.00</p>
+                        <del>₹650.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/helmet.webp" alt="helmet" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Safety Helmet for MTB and Hybrid Bikes</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Safety Accessories</a>
+
+                      <div class="price-box">
+                        <p class="price">₹699.00</p>
+                        <del>₹899.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/BicycleAirPump.webp" alt="BicycleAirPump" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Air Pump for MTB & Hybrid Cycle (Generic)</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Pump</a>
+
+                      <div class="price-box">
+                        <p class="price">₹499.00</p>
+                        <del>₹899.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/griprubberblack.webp" alt="griprubberblack"
+                        class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Grips Rubber for Bicycle Handlebar</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Bicycle Grip</a>
+
+                      <div class="price-box">
+                        <p class="price">₹99.00</p>
+                        <del>₹199.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/rack-Bicycle.webp" alt="rack-Bicycle" class="showcase-img"
+                        width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Aluminum Alloy Adjustable Bicycle Rear Rack Aluminium Bicycle Carrier
+                        </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Bicycle Rack</a>
+
+                      <div class="price-box">
+                        <p class="price">₹799.00</p>
+                        <del>₹1299.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Deal of the day</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/DealDayProduct1.webp" alt="shampoo, conditioner & facewash packs"
+                      class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">Tech Nolt Fat Bike</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Electric Bicycle 35 km Single Charge Mileage-
+                      Top Speed:- 25Km/Hr 29 inches Single Speed Lithium-ion (Li-ion) Electric Cycle
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">₹31,500.00</p>
+
+                      <del>₹55000.00</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/DealDayProduct2.webp" alt="Rose Gold diamonds Earring"
+                      class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">VESCO Kick Bicycle</a>
+                    </h3>
+
+                    <p class="showcase-desc">
+                      Cycle for Kids Bicycles age 6 to 9 Year
+                      Boys & Girls 20 T Road Cycle (Single Speed, Orange).
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">₹3999.00</p>
+                      <del>₹45000.00</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>15</b> </p>
+
+                        <p> available: <b>40</b> </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Days</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">New Products</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/Product_1.png" alt="Mens Winter Leathers Jackets" width="300"
+                    class="product-img default">
+                  <img src="./assets/images/products/Product_1-1.png" alt="Mens Winter Leathers Jackets" width="300"
+                    class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">BLUNT</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mountain Bike</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹16,435.00</p>
+                    <del>₹18,000.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Product_2-2.png" alt="Pure Garment Dyed Cotton Shirt"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/Product_2.png" alt="Pure Garment Dyed Cotton Shirt"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle black">sale</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">VELOX</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">City Bike</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹14526.00</p>
+                    <del>₹18452.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Product_3.png" alt="MEN Yarn Fleece Full-Zip Jacket"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/Product_3-3.png" alt="MEN Yarn Fleece Full-Zip Jacket"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">URBAN TRAIL</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">City Bike</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹9850.00</p>
+                    <del>₹15840.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Product_4-1.png" alt="Black Floral Wrap Midi Skirt"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/Product_4.png" alt="Black Floral Wrap Midi Skirt"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle pink">new</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">VOLTAGE</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Road Bike</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹7850.00</p>
+                    <del>₹12450.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Product_5.png" alt="Casual Men's Brown shoes"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/Product_5-5.png" alt="Casual Men's Brown shoes"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">MILANO</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Road Bike</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹11385.00</p>
+                    <del>₹15842.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Product_6.png" alt="Pocket Watch Leather Pouch"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/Product_6-6.png" alt="Pocket Watch Leather Pouch"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle black">sale</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">TROT</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Geared Bike</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹15870.00</p>
+                    <del>₹19784.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Product_7.png" alt="Smart watche Vital Plus"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/Product_7-7.png" alt="Smart watche Vital Plus"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">STING</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Kids Bike</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹5675.00</p>
+                    <del>₹8965.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Product_8.png" alt="Womens Party Wear Shoes"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/Product_8-8.png" alt="Womens Party Wear Shoes"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle black">sale</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">JANHVI</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Women Bike</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹6540.00</p>
+                    <del>₹8744.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Product_9.png" alt="Mens Winter Leathers Jackets"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/Product_9-9.png" alt="Mens Winter Leathers Jackets"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">ENZO</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Mountain Bike</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹13350.00</p>
+                    <del>₹18350.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Product_10.png" alt="Trekking & Running Shoes - black"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/Product_10-10.png" alt="Trekking & Running Shoes - black"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle black">sale</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">HUSTLE</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Mountain Bike</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹7858.00</p>
+                    <del>₹13582.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Product_11.png" alt="Men's Leather Formal Wear shoes"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/Product_11-11.png" alt="Men's Leather Formal Wear shoes"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Miss IndiaGOLD</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Women Bike</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹7,675.00</p>
+                    <del>₹12453.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/Product_12.png" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/Product_12-12.png" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+
+                  <p class="showcase-badge angle black">sale</p>
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">PISTOL</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title">Kids Bike</a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">₹4,605.00</p>
+                    <del>₹6085.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">testimonial</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/arbajshaikh.jpeg" alt="Arbaj Shaikh" class="testimonial-banner" width="80"
+                height="80">
+
+              <p class="testimonial-name">Arbaj Shaikh</p>
+
+              <p class="testimonial-title">CEO & Founder Invision</p>
+
+              <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                At BiKing, we are not just selling bicycles;
+                we are nurturing a passion for two-wheel adventures.
+                Thank you for being a part of this incredible journey. Ride on!"
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./assets/images/cta-banner1.png" alt="Summer Bicycle Collection" class="cta-banner">
+
+            <a href="/shop/summer-collection" class="cta-content">
+
+              <p class="discount">Explore Now</p>
+
+              <h2 class="cta-title">Ride into Summer with Style</h2>
+
+              <p class="cta-text">Discover our latest Summer Bicycle Collection, now available at an exclusive 25%
+                discount. Starting at just ₹6000!</p>
+
+              <button class="cta-btn">Shop Now</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+          <div class="service">
+
+            <h2 class="title">Our Services</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Pan-India Delivery</h3>
+                  <p class="service-desc">Free Shipping on Orders Over ₹500</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Express Delivery</h3>
+                  <p class="service-desc">Next Day Delivery Available Across India</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">24/7 Customer Support</h3>
+                  <p class="service-desc">Assistance Available Round the Clock</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Flexible Return Policy</h3>
+                  <p class="service-desc">Easy & Free Returns Within 30 Days</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">Cashback Offers</h3>
+                  <p class="service-desc">Get 30% Cashback on Orders Over ₹1000</p>
+
+                </div>
+
+              </a>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/blog1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives"
+                width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category"> Gear Up for Spring Cycling:</a>
+
+              <a href="#">
+                <h3 class="blog-title">Discuss the essential gear needed for safe and enjoyable spring cycling,
+                  including new season apparel, maintenance tips, and route suggestions. Link to relevant products on
+                  your website.</h3>
+              </a>
+
+              <p class="blog-meta">
+                By <cite>Mr Admin</cite> / <time datetime="2022-04-06">Apr 06, 2022</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/blog2.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Conquer the Hills </a>
+
+              <h3>
+                <a href="#" class="blog-title">Offer guidance on conquering hills confidently, covering techniques, gear
+                  choices, and training tips. Highlight Bikes and accessories suitable for climbing.</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Mr Robin</cite> / <time datetime="2022-01-18">Jan 18, 2022</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/blog3.jpg" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
+                class="blog-banner" width="300">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Go Electric: Exploring the World of E-Bikes</a>
+
+              <h3>
+                <a href="#" class="blog-title">Discuss the benefits of electric Bikes, dispel common myths, and offer
+                  guidance on choosing the right e-Bike for different needs. Showcase your e-Bike selection and
+                  highlight their features.</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Mr Selsa</cite> / <time datetime="2022-02-10">Feb 10, 2022</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/blog4.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category"> Family Fun on Two Wheels</a>
+
+              <h3>
+                <a href="#" class="blog-title">Promote the joys of cycling as a family activity. Suggest kid-friendly
+                  Bikes, safety tips, and family-oriented cycling routes. Link to relevant products for children and
+                  families.</a>
+              </h3>
+
+              <p class="blog-meta">
+                By <cite>Mr Pawar</cite> / <time datetime="2022-03-15">Mar 15, 2022</time>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+      <div class="container">
+        <h2 class="footer-category-title">Bicycle Shop</h2>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Bicycles :</h3>
+          <a href="#" class="footer-category-link">Mountain Bikes</a>
+          <a href="#" class="footer-category-link">Road Bikes</a>
+          <a href="#" class="footer-category-link">City Bikes</a>
+          <a href="#" class="footer-category-link">Electric Bikes</a>
+          <a href="#" class="footer-category-link">Folding Bikes</a>
+          <a href="#" class="footer-category-link">BMX Bikes</a>
+          <a href="#" class="footer-category-link">Kids Bikes</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Accessories :</h3>
+          <a href="#" class="footer-category-link">Helmets</a>
+          <a href="#" class="footer-category-link">Locks</a>
+          <a href="#" class="footer-category-link">Lights</a>
+          <a href="#" class="footer-category-link">Bike Racks</a>
+          <a href="#" class="footer-category-link">Water Bottles</a>
+          <a href="#" class="footer-category-link">Repair Kits</a>
+          <a href="#" class="footer-category-link">Cycling Gloves</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Apparel :</h3>
+          <a href="#" class="footer-category-link">Cycling Jerseys</a>
+          <a href="#" class="footer-category-link">Shorts & Tights</a>
+          <a href="#" class="footer-category-link">Jackets</a>
+          <a href="#" class="footer-category-link">Gloves</a>
+          <a href="#" class="footer-category-link">Hats</a>
+          <a href="#" class="footer-category-link">Socks</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Parts :</h3>
+          <a href="#" class="footer-category-link">Tires</a>
+          <a href="#" class="footer-category-link">Brakes</a>
+          <a href="#" class="footer-category-link">Chains</a>
+          <a href="#" class="footer-category-link">Pedals</a>
+          <a href="#" class="footer-category-link">Derailleurs</a>
+          <a href="#" class="footer-category-link">Handlebars</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer-nav">
+      <div class="container">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Explore Bicycles</h2>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Mountain Bikes</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Road Bikes</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Electric Bikes</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">City Bikes</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Bicycle Accessories</h2>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Helmets</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Lights</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Locks</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Bike Racks</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Customer Service</h2>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact Us</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Shipping Information</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Returns & Exchanges</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Connect With Us</h2>
+          </li>
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <address class="content">
+              Hadapsar Pune
+              , Maharashatra, India
+            </address>
+          </li>
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <a href="tel:+91-#" class="footer-nav-link">(+91) 9673-XXXXXX</a>
+          </li>
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <a href="bikingexample@gmail.com" class="footer-nav-link">bikingexample@gmail.com</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+          <li>
+            <ul class="social-link">
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <div class="container">
+        <p class="copyright">
+          Made By : Arbaj Shaikh And Saurabh Kope
+        </p><br>
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; 2024 <a href="#">BIKING</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
